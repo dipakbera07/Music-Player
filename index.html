@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="nav-part nav-part1">
+            <div class="hamburger">
+                <img src="svgs/hamburger.svg" alt="">
+            </div>
+            <div class="close">
+                <img src="svgs/cross.svg" alt="">
+            </div>
+            <div class="logo">
+                <img src="svgs/logo.svg" alt="">
+            </div>
+            <div class="home">
+                <img src="svgs/home.svg" alt="">
+            </div>
+            <div class="nav-search">
+                <img src="svgs/search.svg" alt="Search" class="search">
+                <input type="text" placeholder="What do you want to play?">
+                <hr>
+                <img src="svgs/brows.svg" alt="Brows" class="brows">
+            </div>
+        </div>
+        <div class="nav-part nav-part2">
+            <div class="nav-part2-box1">
+                <div class="mode">
+                    <div class="mode-circle" id="dark"></div>
+                </div>
+            </div>
+            <hr>
+            <div class="nav-part2-box2">
+                <div class="install-app">
+                    <img src="svgs/download.svg" alt="">
+                    <button>Install App</button>
+                </div>
+                <button>Sign up</button>
+            <div class="login">
+                <button>Log in</button>
+            </div>
+            </div>
+
+        </div>
+    </nav>
+    <div class="container">
+        <div class="container-part container-part1">
+            <div class="nav-search search">
+                <img src="svgs/search.svg" alt="Search" class="search">
+                <input type="text" placeholder="What do you want to play?">
+                <hr>
+                <img src="svgs/brows.svg" alt="Brows" class="brows">
+            </div>
+            <div class="your-library">
+                <img src="svgs/library.svg" alt="">
+                <p>Your Library</p>
+                <div class="library-icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+            <div class="songlist">
+                <ul>
+                    
+                </ul>
+                <!-- <div class="container-part1-box">
+                    <h2>Create your first playlist</h2>
+                    <p>it's easy, we'll help you</p>
+                    <div class="container-part1-box-button">
+                        <button>Create Playlist</button>
+                    </div>
+                </div>
+                <div class="container-part1-box">
+                    <h2>Lets find some podcast's to follow</h2>
+                    <p>we will keep you updated on new episodes</p>
+                    <div class="container-part1-box-button">
+                        <button>Brows podcasts</button>
+                    </div>
+                </div> -->
+            </div>
+            <div class="container-part1-footer">
+                <!-- <div class="container-part1-footer-box1">
+                    <div><a href="">Legal</a></div>
+                    <div><a href="">Safety&Privacy Center</a></div>
+                    <div><a href="">Privacy Policy</a></div>
+                    <div><a href="">Cookies</a></div>
+                    <div><a href="">About Ads</a></div>
+                    <div><a href="">Accsibility</a></div>
+                </div> -->
+                <div class="container-part1-footer-box2">
+                    <!-- <div class="container-part1-footer-cookies">Cookies</div> -->
+                    <div class="container-part1-footer-lang">
+                        <img src="svgs/lang.svg" alt="">
+                        <p>English</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- --------------- CONTAINER PART2 ---------- -->
+        <div class="container-part container-part2">
+            <!-- <div class="container-part2-box1">
+                <h1>Populer artists</h1>
+                <div class="container-part2-box1-cards">
+                    <div class="card1">
+                        <div class="card1-img">
+                            <img src="images/1.jpeg" alt="">
+                        </div>
+                        <h2>Pritam</h2>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card1">
+                        <div class="card1-img">
+                            <img src="images/2.jpeg" alt="">
+                        </div>
+                        <h2>Pritam</h2>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card1">
+                        <div class="card1-img">
+                            <img src="images/3.jpeg" alt="">
+                        </div>
+                        <h2>Pritam</h2>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card1">
+                        <div class="card1-img">
+                            <img src="images/4.jpeg" alt="">
+                        </div>
+                        <h2>Pritam</h2>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card1">
+                        <div class="card1-img">
+                            <img src="images/5.jpeg" alt="">
+                        </div>
+                        <h2>Pritam</h2>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card1">
+                        <div class="card1-img">
+                            <img src="images/6.jpeg" alt="">
+                        </div>
+                        <h2>Pritam</h2>
+                        <p>Artist</p>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="container-part2-box1 container-part2-box2">
+                <h1>Populer albums and singers</h1>
+                <div class="container-part2-box1-cards">
+                    <div data-folder="cs" class="card1 card2">
+                        <div class="card1-img card2-img">
+                            <img src="images/s1.jpeg" alt="">
+                        </div>
+                        <div class="card2-footer">
+                            <div class="card2-footer-h2">
+                                <h2>Sanam Teri Kasam </h2>
+                            </div>
+                            <div class="card2-p">
+                                <p>Himesh Reshammiya, Sameer Anjaan, Subrat Sinha</p>
+                            </div>
+                        </div>
+                        <div class="play-button1">
+                            <img src="svgs/play-button.svg" alt="">
+                        </div>
+                    </div>
+                    <div data-folder="ncs" class="card1 card2">
+                        <div class="card1-img card2-img">
+                            <img src="images/s2.jpeg" alt="">
+                        </div>
+                        <div class="card2-footer">
+                            <div class="card2-footer-h2">
+                                <h2>Aashiqui 2</h2>
+                            </div>
+                            <div class="card2-p">
+                                <p>Mithoon, Ankit Tiwari, Jeet Gannguli</p>
+                            </div>
+                        </div>
+                        <div class="play-button1">
+                            <img src="svgs/play-button.svg" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="playbar">
+        <div class="playbar-part1">
+            <div class="song-info1">
+
+            </div>
+            <div class="play-buttons">
+                <img id="prev" src="svgs/previous.svg" alt="">
+                <img id="play" src="svgs/play.svg" alt="">
+                <img id="next" src="svgs/next.svg" alt="">
+            </div>
+            <div class="aboveBar">
+                <div class="volume">
+                    <div class="mute">
+                        <img src="svgs/mute.svg" alt="">
+                    </div>
+                    <div class="volume-up">
+                        <img src="svgs/volume.svg" alt="">
+                    </div>
+                    <input type="range" value="100">
+                    <div class="volume-change">100%</div>
+                </div>
+                <hr>
+                <div class="song-time">
+    
+                </div>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="seekbar"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
