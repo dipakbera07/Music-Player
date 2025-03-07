@@ -26,7 +26,7 @@ async function getSongs(folder) {
     }
 
     let isPlaying = !currSong.paused;
-
+    
     //by default load the first song
     if (!isPlaying && songs.length > 0) {
         currSong.src = `/${currFolder}/` + encodeURIComponent(songs[0]);
@@ -128,7 +128,8 @@ async function displayAlbums() {
 
 
 async function main() {
-    let songs = await getSongs("songs/cs");
+    songs = await getSongs("songs/cs");
+    displayAlbums();
 
     // Play and pause for each song
     play.addEventListener("click", () => {
@@ -142,7 +143,6 @@ async function main() {
         }
     });
 
-    displayAlbums();
 
     // Current song time update
     currSong.addEventListener("timeupdate", () => {
@@ -175,9 +175,9 @@ async function main() {
 
     // addEventListner for next
     next.addEventListener("click", () => {
-        console.log(decodeURI(currSong.src.split("/").pop()));
-        let index = songs.indexOf(decodeURI(currSong.src.split("/").pop()));
-        console.log(index);
+        // console.log(decodeURI(currSong.src.split("/").pop()));
+        let index = songs.indexOf(decodeURI((currSong.src.split("/").pop())));
+        // console.log(index);
         console.log(songs,index);
         // console.log(songs.length);
         if (index + 1 < songs.length) {
