@@ -17,13 +17,14 @@ async function getSongs(folder) {
     let div = document.createElement("div");
     div.innerHTML = response;
     let as = div.getElementsByTagName("a");
-    let songs = [];
+    songs = [];
     for (let i = 0; i < as.length; i++) {
         let element = as[i];
         if (element.href.endsWith(".mp3")) {
             songs.push(element.href.split(`/${currFolder}/`)[1]);
         }
     }
+
     let isPlaying = !currSong.paused;
 
     //by default load the first song
@@ -60,7 +61,7 @@ async function getSongs(folder) {
         })
     })
 
-    // return songs;
+    return songs;
 }
 
 const playmusic = (track) => {
@@ -174,9 +175,10 @@ async function main() {
 
     // addEventListner for next
     next.addEventListener("click", () => {
-        // console.log(decodeURI(currSong.src.split("/").pop()));
+        console.log(decodeURI(currSong.src.split("/").pop()));
         let index = songs.indexOf(decodeURI(currSong.src.split("/").pop()));
-        console.log(songs, index);
+        console.log(index);
+        console.log(songs,index);
         // console.log(songs.length);
         if (index + 1 < songs.length) {
             playmusic(songs[index + 1])
@@ -208,7 +210,7 @@ async function main() {
             document.querySelector(".volume-change").innerHTML = "0%";
             document.querySelector(".volume").getElementsByTagName("input")[0].value = 0;
         }
-        // console.log(currSong.volume * 100)
+
     })
 
     // Eventlistner for mute
@@ -224,16 +226,7 @@ async function main() {
 
     })
 
-
     //dark mode 
-    // var element = document.getElementById('dark'),
-    //     style = window.getComputedStyle(element),
-    //     left = style.getPropertyValue('left');
-    // console.log(left);
-
-
-    // let left1 = document.querySelector(".mode-circle").style.getComputedStyle(left);
-    // console.log(left1);
     document.querySelector(".mode").addEventListener("click", () => {
         var element = document.getElementById('dark'),
         style = window.getComputedStyle(element),
