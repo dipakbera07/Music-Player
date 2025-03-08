@@ -96,7 +96,7 @@ async function displayAlbums() {
             cardContainer.innerHTML = cardContainer.innerHTML + `
             <div data-folder="${folder}" class="card1 card2">
                         <div class="card1-img card2-img">
-                            <img src="songs/ncs/cover.jpeg" alt="">
+                            <img src="songs/${folder}/cover.jpeg" alt="">
                         </div>
                         <div class="card2-footer">
                             <div class="card2-footer-h2">
@@ -128,7 +128,7 @@ async function displayAlbums() {
 
 
 async function main() {
-    songs = await getSongs("songs/cs");
+    songs = await getSongs("songs/all");
     displayAlbums();
 
     // Play and pause for each song
@@ -270,6 +270,7 @@ async function main() {
             document.querySelector(".seekbar").style.borderColor = "black";
             document.querySelector(".circle").style.backgroundColor = "black";
             document.querySelector(".songlist ").style.scrollbarColor = "lightgray white";
+            document.querySelector(".container-part2-box2").style.scrollbarColor = "lightgray white";
             document.querySelector(".play-buttons").children[0].style.filter = "invert(0)";
             document.querySelector(".play-buttons").children[1].style.filter = "invert(0)";
             document.querySelector(".play-buttons").children[2].style.filter = "invert(0)";
@@ -318,7 +319,8 @@ async function main() {
             document.querySelector(".playbar").style.backgroundColor = "black";
             document.querySelector(".seekbar").style.borderColor = "white";
             document.querySelector(".circle").style.backgroundColor = "white";
-            document.querySelector(".songlist ").style.scrollbarColor = "lightgray white";
+            document.querySelector(".songlist ").style.scrollbarColor = "rgb(96, 96, 96) rgb(30, 30, 30)";
+            document.querySelector(".container-part2-box2 ").style.scrollbarColor = "rgb(96, 96, 96) rgb(30, 30, 30)";
             document.querySelector(".play-buttons").children[0].style.filter = "invert(1)";
             document.querySelector(".play-buttons").children[1].style.filter = "invert(1)";
             document.querySelector(".play-buttons").children[2].style.filter = "invert(1)";
