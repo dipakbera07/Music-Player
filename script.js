@@ -274,6 +274,8 @@ async function main() {
             document.querySelector(".play-buttons").children[0].style.filter = "invert(0)";
             document.querySelector(".play-buttons").children[1].style.filter = "invert(0)";
             document.querySelector(".play-buttons").children[2].style.filter = "invert(0)";
+            document.querySelector(".nav-part1 ").children[0].style.filter = "invert(0)";
+            document.querySelector(".nav-part1 ").children[1].style.filter = "invert(0)";
 
             
             
@@ -324,6 +326,8 @@ async function main() {
             document.querySelector(".play-buttons").children[0].style.filter = "invert(1)";
             document.querySelector(".play-buttons").children[1].style.filter = "invert(1)";
             document.querySelector(".play-buttons").children[2].style.filter = "invert(1)";
+            document.querySelector(".nav-part1 ").children[0].style.filter = "invert(1)";
+            document.querySelector(".nav-part1 ").children[1].style.filter = "invert(1)";
 
         }
     })

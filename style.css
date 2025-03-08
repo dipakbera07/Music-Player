@@ -91,6 +91,7 @@ nav {
     height: 26px;
 }
 
+
 /* ------------ NAV PART2 ----------- */
 .nav-part2 {
     margin-right: 45px;
@@ -1095,8 +1096,8 @@ nav {
         display: block;
         filter: invert(1);
         position: absolute;
-        top: 9px;
-        left: 13px;
+        top: 20px;
+        left: 17px;
         display: none;
     }
 
@@ -1200,6 +1201,12 @@ nav {
         height: 14px;
         margin-top: 3px;
         gap: 4px;
+    }
+    .nav-part2-box1 {
+        display: block;
+    }
+    .nav-part2-box1 {
+        margin-right: 3px;
     }
 }
 
